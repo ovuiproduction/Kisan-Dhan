@@ -104,7 +104,7 @@ def jowar():
 
 @app.route('/Bajara')
 def bajara():
-    cursor  = collection.find({'commodity':"Bajara"})
+    cursor  = collection.find({'commodity':"Bajra"})
     data = list(cursor)
 
     distlist = ['Solapur','Nanded','Buldhana','Amravati','Sambhajinagar']
@@ -185,7 +185,7 @@ def solapur():
     cursor  = collection.find({'district':"Solapur"})
     data = list(cursor)
 
-    commoditylist = ['Jowar','Bajara','Cotton','Sugarcane','Wheat']
+    commoditylist = ['Jowar','Bajra','Cotton','Sugarcane','Wheat']
     crop_frequency = [0,0,0,0,0]
     
     
@@ -201,7 +201,7 @@ def nanded():
     cursor  = collection.find({'district':"Nanded"})
     data = list(cursor)
 
-    commoditylist = ['Jowar','Bajara','Cotton','Sugarcane','Wheat']
+    commoditylist = ['Jowar','Bajra','Cotton','Sugarcane','Wheat']
     crop_frequency = [0,0,0,0,0]
     
     
@@ -218,7 +218,7 @@ def buldhana():
     cursor  = collection.find({'district':"Buldhana"})
     data = list(cursor)
 
-    commoditylist = ['Jowar','Bajara','Cotton','Sugarcane','Wheat']
+    commoditylist = ['Jowar','Bajra','Cotton','Sugarcane','Wheat']
     crop_frequency = [0,0,0,0,0]
     
     
@@ -234,7 +234,7 @@ def amaravati():
     cursor  = collection.find({'district':"Amravati"})
     data = list(cursor)
 
-    commoditylist = ['Jowar','Bajara','Cotton','Sugarcane','Wheat']
+    commoditylist = ['Jowar','Bajra','Cotton','Sugarcane','Wheat']
     crop_frequency = [0,0,0,0,0]
     
     
@@ -250,7 +250,7 @@ def sambhajinagar():
     cursor  = collection.find({'district':"Sambhajinagar"})
     data = list(cursor)
 
-    commoditylist = ['Jowar','Bajara','Cotton','Sugarcane','Wheat']
+    commoditylist = ['Jowar','Bajra','Cotton','Sugarcane','Wheat']
     crop_frequency = [0,0,0,0,0]
     
     
@@ -417,7 +417,7 @@ def result():
                 avgPriceNextyear.append(predictionAvg)
                 x_count = x_count + 1
         
-        elif(commoditytype == "Bajara"):
+        elif(commoditytype == "Bajra"):
             cropface = cropimges[4]
             prediction = Bmodel.predict(transformed_features).reshape(1,-1)
             predicted_value = round(prediction[0][0] , 3)
