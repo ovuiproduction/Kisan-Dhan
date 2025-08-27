@@ -60,7 +60,7 @@ def predict():
 def crop_statistics():
     
     distlist = ['Solapur','Nanded','Buldhana','Amravati','Sambhajinagar']
-    commoditylist = ['Jowar','Bajara','Cotton','Sugarcane','Wheat']
+    commoditylist = ['Jowar','Bajra','Cotton','Sugarcane','Wheat']
 
     cursor  = collection.find({})
     data = list(cursor)
