@@ -115,8 +115,10 @@ Start the server
 
 
 ## Contributors
-
+```bash
 -- Onkar Waghmode
 -- Shripad Wattamwar
 -- Atharva Wagh
 -- Aditya Zite
+
+```
